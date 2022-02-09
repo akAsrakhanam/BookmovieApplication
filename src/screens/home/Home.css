@@ -1,60 +1,45 @@
-/* 
-The CSS layout here is structured as per the specifications of the project described
-in the BookMovieApp Project
+/*
+This CSS file layout conforms to the specification of the home page
+layout as sdescibed in the BookMovieApp
 */
 
-.app-header {
-    background-color: #222;
-    height: 36px;
-    padding: 8px 32px 8px 16px;
+::-webkit-scrollbar {
+    width: 4px;
   }
   
-  .login-button {
-    float: right;
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 4px;
   }
   
-  @-webkit-keyframes app-logo-spin {
-    to { -webkit-transform: rotateY(360deg); }
-  }
-  @keyframes app-logo-spin {
-    to { transform: rotateY(360deg); }          
-  }
-  @-moz-keyframes app-logo-spin{
-    to { -moz-transform: rotateY(360deg); }
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
   }
   
-  /*
-  Rotate logo infinitely with a complete cycle of 8 seconds, 
-  and the speed curve of the animation should be linear
-  */
-  .app-logo {
-    float: left;
-    height: 35px;
-    background: #ff7f7f;
-  
-    animation: app-logo-spin infinite 8s linear;
-    -webkit-animation: app-logo-spin 8s infinite linear;
-    -moz-animation: app-logo-spin 8s infinite linear;  
+  ::-webkit-scrollbar-thumb:hover {
+    background: grey;
   }
   
-  .bookshow-button {
-    float: right;
-    margin-right: 8px;
+  .movie-poster {
+    height: 100%;
+    width: auto;
   }
   
-  .tabs {
-    margin-bottom: 20px;
+  .flex-container {
+    display: flex;
   }
   
-  .dispNone {
-    display: none;
+  .flex-container > div {
+    margin: 16px;
   }
   
-  .dispBlock {
-    display: block;
+  .left {
+    width: 76%;
   }
   
-  .red {
-    color: red;
+  .right {
+    padding-top: 20px;
+    width: 24%;
   }
   

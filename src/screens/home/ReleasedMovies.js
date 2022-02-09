@@ -16,7 +16,7 @@ const styles = theme => ({
         transform: 'translateZ(0)',        
     },
     releasedMovieGridItem: {
-        margin: '15px',
+        margin: '16px',
         cursor: 'pointer'
     },
     title: {
